@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-
+    public int dialogNumber;
     // Start is called before the first frame update
     void Start()
     {
