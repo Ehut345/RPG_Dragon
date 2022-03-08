@@ -17,6 +17,7 @@ public class DialogObjects : MonoBehaviour
     public Text dialogTextBox;
     public int curretDialogNumber = 0;
     private DialogObject currentDialog = null;
+    public NonPlayerCharacter npc;
     [Header("DialogObjects")]
     public DialogObject dialog1;
     private void OnEnable()
@@ -42,7 +43,8 @@ public class DialogObjects : MonoBehaviour
         }
         else
         {
-            //end the dialog
+            npc.diaglogText.SetActive(false);
+            curretDialogNumber = 0;
         }
     }
     public void NextDialogButton()
@@ -58,6 +60,7 @@ public class DialogObjects : MonoBehaviour
     void Start()
     {
         //player = FindObjectOfType<Player>();
+
     }
 
     // Update is called once per frame
