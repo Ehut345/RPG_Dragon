@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-[SerializeField]
+[Serializable]
 public class DialogObject
 {
     public string[] dialogs;
@@ -12,7 +12,7 @@ public class DialogObject
 }
 public class DialogObjects : MonoBehaviour
 {
-    private Player player;
+    public Player player;
     public Text nameTextBox;
     public Text dialogTextBox;
     public int curretDialogNumber = 0;
@@ -38,7 +38,7 @@ public class DialogObjects : MonoBehaviour
         nameTextBox.text = tempdialogs.charactesNames;
         if (curretDialogNumber < tempdialogs.dialogs.Length)
         {
-            dialogTextBox.text = tempdialogs.dialogs[0];
+            dialogTextBox.text = tempdialogs.dialogs[curretDialogNumber];
         }
         else
         {
@@ -57,7 +57,7 @@ public class DialogObjects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<Player>();
+        //player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
