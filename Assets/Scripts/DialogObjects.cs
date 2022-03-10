@@ -19,15 +19,21 @@ public class DialogObjects : MonoBehaviour
     private DialogObject currentDialog = null;
     public NonPlayerCharacter npc;
     [Header("DialogObjects")]
-    public DialogObject dialog1;
+    public DialogObject playerDialogs;
+    public DialogObject enemyDialogs;
     private void OnEnable()
     {
         switch (player.dialogNumber)
         {
             case 1:
-                Debug.Log("need to replace with dialogbox1");
-                PlayDialog(dialog1);
-                currentDialog = dialog1;
+                Debug.Log("need to replace with playerDialog");
+                PlayDialog(playerDialogs);
+                currentDialog = playerDialogs;
+                break;
+            case 2:
+                Debug.Log("need to replace with enemyDialog");
+                PlayDialog(enemyDialogs);
+                currentDialog = enemyDialogs;
                 break;
             default:
                 break;

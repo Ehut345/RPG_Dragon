@@ -26,7 +26,7 @@ public class NonPlayerCharacter : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.K))
                 {
-                    other.gameObject.GetComponent<Player>().dialogNumber = 1;
+                    //other.gameObject.GetComponent<Player>().dialogNumber = 1;
                     diaglogText.SetActive(true);
                     infoText.SetActive(false);
                     //tempInfotexactive = true;
