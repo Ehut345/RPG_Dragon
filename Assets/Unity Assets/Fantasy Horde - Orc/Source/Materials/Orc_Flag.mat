@@ -8,13 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Orc_Flag
-  m_Shader: {fileID: 4800000, guid: 901cb4d38cc5df3478328f726618464c, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -76,6 +77,7 @@ Material:
     - _GlossMapScale: 0.27
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Metallic: 0
     - _MetallicIntensity: 0
     - _Mode: 1
     - _OcclusionStrength: 1

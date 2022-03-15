@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FH_Orc_Tribal
-  m_Shader: {fileID: 4800000, guid: 01ded34fe24c25346a2a5bad59b8289b, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -89,6 +89,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.731
     - _GlossyReflections: 1
+    - _Metallic: 0
     - _MetallicIntensity: 1
     - _Mode: 0
     - _OcclusionStrength: 1
